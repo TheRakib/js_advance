@@ -54,31 +54,86 @@ list.map(   (e)=> {
 
 });
 
-
-
 /*
 document
 .querySelector("form")
 .addEventListener("submit", functionsnamn/callback);
 
-
 document
 .querySelector("button")
 .addEventListener("click",functionsnamn/callback );
 
-
 */
 
 
+//kl. 11.00 
+
+
+// Copy list :- array 
 
 
 
+// vi vill ha original lista kvar /inte ska ändras 
+// får ändra original lista 
+/*
+const songList =["song 1", "song 2", "song 3"];
+console.log(songList)
+const copySongList = Array.from(songList)
+console.log("copied list " , copySongList)
+copySongList.push("song 4");
+console.log(songList)
+console.log("copied list " , copySongList)
+const songList = ["song 1", "song 2", "song 3"];
+const copySongList= [];
+songList.concat(copySongList);
+console.log(songList);
+copySongList.push("song 4");
+console.log(copySongList);
+
+*/
+
+// string.split("").reverse().join("")
 
 
+//Palidrom
+
+function palindrom (ord) {
+    const ordTolowerCase= ord.toLowerCase();
+    //console.log(ordTolowerCase);
+    if (ordTolowerCase == ordTolowerCase.split("").reverse().join("")) {
+        console.log(ord, "ordet är en palindrom")
+    }
+    else {   
+        console.log(ord, "ordet är inte en palindrom")
+ 
+    }
+
+ }
+
+ palindrom("Anna");
+ palindrom("hej");
 
 
+// 10.
 
+function searchAndReplace(searchWord, replaceWord, text) {
+    // search() ,split(), slice()
+    // replace() 
+    // text
+    // leta efter searchWord i text var
+    // replace searchWord med replaceWord 
+   console.log(text.replace(searchWord, replaceWord))
+   return text.replace(searchWord, replaceWord);
+    // return  ändrat texten/console.log(new text)
+}
+searchAndReplace("hello", "hallå", "hello, wie21s")
 
+/*
+let text= "something something dark side..";
+const newText= text.replace(/something/gi,function (re) {
+return re= "someotherthing";
+})
+document.querySelector(".replacedText").textContent= " Resultat = "+ newText;
+*/
 
-// Copy list 
 // Handledning 
