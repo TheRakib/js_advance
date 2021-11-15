@@ -8,30 +8,40 @@ document.querySelector("button").addEventListener("click", calculateBudget)
 function calculateBudget(e) {
     e.preventDefault();
   
-   console.log("button works")
+   //console.log("button works")
     
 
-const addOption= document.querySelector(".plus").textContent;
-console.log(addOption);
+const option= document.querySelector("select");
+console.log(option.value);
 // om användare väljer + ska description och value hamnas i inkomst-lista diven
-if(addOption=="+"){
-      
+if(option.value=="+"){    
+    //console.log(addOption)
   const description =  document.querySelector("#desc").value;
   const value = document.querySelector("#num").value;
-
-  const div= document.querySelector(".inkomst-lista")
-  
-  div.innerHTML   += `<li>${description}     ${value}</li>`
+ const div= document.querySelector(".inkomst-lista");
+ // console.log(div)
+ div.innerHTML   += `<li>${description}     ${value}</li>`
 
 
 }
+ //om användare väljer - ska description och value hamnas i kostnad-lista diven
 
-const minusOption =document.querySelector(".minus").textContent;
-console.log(minusOption);
-const chooseOption = document.querySelector(".choose").textContent;
-console.log(chooseOption);
+if(option.value =="-"){
+    //console.log(minusOption)
+    const description = document.querySelector("#desc").value;
+    const value = document.querySelector("#num").value;
+    const kostnadDiv= document.querySelector(".kostnad-lista");
+   // console.log(kostnadDiv)
+    kostnadDiv.innerHTML += `<li>${description}     ${value}</li>`;
+ }
+//const chooseOption = document.querySelector(".choose").textContent;
+//console.log(chooseOption);
 //if()
-   //om användare väljer - ska description och value hamnas i kostnad-lista diven
+if(option.value=="choose") 
+{
+    alert("Hej, Du måste välja från  + och -")
+}
+  
 
 }
 
