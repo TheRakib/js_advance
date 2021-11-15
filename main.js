@@ -3,6 +3,7 @@
 // för kunna använda localstorage:- 
 
 //camel case 
+
 localStorage.setItem("key", [12, 3,445]);
 
 const localstorageValue = localStorage.getItem("key");
