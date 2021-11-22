@@ -138,3 +138,72 @@ document.querySelector(".replacedText").textContent= " Resultat = "+ newText;
 */
 
 // Handledning 
+
+
+// varje if körs av compiler/översättare
+// else if 
+// else 
+/* 
+if(false) {
+    console.log("kommer att köras om if är sant")
+}
+else if(false){
+    console
+    .log("kommer att köras om ovanstående villkoret inte är sant")
+}
+else{
+    console.log("kommer att köras om if/else if inte är sant")
+}
+
+console.log("......")
+*/
+
+const array = [1, 23,455, 66,677,"sista value"]
+console.log(array[array.length-1]) //viktigt för kunskapkontrollen 
+
+//tar bort första value från array
+console.log(array.shift())
+// tar bort sista value från array
+console.log(array.pop())
+
+const multiArray = [[12,22], [33,45]]
+console.log(multiArray[0][0])
+// Loopa igenom array:en ??
+for(var i = 0; i<multiArray.length; i++){
+    //console.log(multiArray[i])
+     for(var j=0; j<multiArray[i].length; j++)
+    {
+        console.log(multiArray[i][j])
+    }
+}
+// konvertering en data type till annan datatype
+// split("") : string/text till array
+// join(""): array till string/text 
+console.log(array.join(""))
+
+
+Number("12")
+//svar: 12
+parseInt("12")
+// svar: 12
+parseFloat("12")
+// svar: 12
+parseFloat("12.4123")
+// svar : 12.4123
+parseInt("12.4123")
+// svar: 12
+Number("12.4123")
+// svar: 12.4123
+
+// kl. 10.00 
+// undefined + siffror
+undefined + 10
+// Svar: NaN
+"text" /10
+//Svar: NaN
+"text" *10
+// Svar: NaN
+var a=0; 
+var b= 0;
+console.log(a/b);
+

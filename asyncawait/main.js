@@ -51,6 +51,15 @@ async function fetchPicture() {
   
     // hanterar vi promise
     response.json()
+
+    /*
+    
+    Json: {"name":"rakib"}
+
+    Object : { name: "rakib"}
+
+    
+    */
     .then( res=> {  //callback function i promise som extraherar response
     console.log(res.urls) // response object har urls key och urls har small, raw keys 
     // raw keys har bildadressen 
@@ -62,7 +71,23 @@ async function fetchPicture() {
     document.querySelector("body").appendChild(img)
   } )  
 }
-document
+/*document
 .querySelector("button")
 .addEventListener("click", fetchPicture)
 //kl.11.00 
+*/ 
+
+
+
+
+async function fetchImg() {
+  const Urls="https://api.unsplash.com/photos/random?";
+  const client_id="client_id=StO9sFglhemQt_JdSRJytAsx971OWI5FKJa9B2yDfO4"
+  const response = await fetch(Urls+client_id);
+  response.json().then( res=> console.log(res.urls.small))
+}
+
+document
+.querySelector("button")
+.addEventListener("click", fetchImg)
+

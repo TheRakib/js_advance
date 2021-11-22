@@ -1,0 +1,14 @@
+
+** HTTPS: Hyper text transfer protocol:-  (s:secured)
+***************
+Metods: Post/write/create-> C
+        Get/Read-> R
+        Put/update->U
+        Delete-> D
+        CRUD
+Data/response:- Med data eller med error kod
+Status-kod:-
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses
+Header:- credentials, information om din app 
+
+**************

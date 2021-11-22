@@ -28,7 +28,6 @@ if(option.value=="+"){
 
   const description =  document.querySelector("#desc").value;
   const value = document.querySelector("#num").value;
-
   inkomstLista.push(value)
  const div= document.querySelector(".inkomst-lista");
  // console.log(div)
