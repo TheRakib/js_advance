@@ -2,8 +2,14 @@ const textList = [];
 const object = {}
 // Vi kommer att läsa data från användare (input + event)
 function addToLocalStorage(e){
+
     e.preventDefault();
-    //console.log(e)
+
+    const element = e.target;
+
+   console.log( element)
+
+// changeList(element_Data)
 const text = document.querySelector("#text").value;
 const number = document.querySelector("#number").value;
 console.log(text); 
@@ -15,7 +21,7 @@ console.log(object);
 object["keynamn2"]="value 2"
 console.log(object);*/
 object[text] = number
-console.log(object);
+//console.log(object);
 // Stringify -> JSON 
 // setItems till localstorage 
 //console.log(" min lista ", );
@@ -25,9 +31,18 @@ localStorage.setItem("obj", JSON.stringify(object))
 
 }
 
+
 // läser data från localstorage
+/* 
+var obj= {name:"rakib"}
 
+obj+"text"
+'[object Object]text'
 
+JSON.stringify(obj)+"text"
+'{"name":"rakib"}text'
+
+/*
 function changeList(i){
     const res = localStorage.getItem("text");
     // If res is not undefined/null :- 
@@ -36,14 +51,18 @@ function changeList(i){
 
     const objRes = localStorage.getItem("obj");
     const parsedObj = JSON.parse(objRes);
+    console.log(parsedObj);
+    delete parsedObj["test 6"]
     console.log(parsedObj);  
+    localStorage.setItem("obj", JSON.stringify(parsedObj))
+    //localStorage.setItem("obj", JSON.stringify(parsedObj))
     // arrayName.shift()  tar bort första item i lista
     //console.log(text.shift());
     // arrayName.pop();' tar bort sista item i lista
     //console.log(text.pop());
 // tar bort en specific 
 text.splice(i, 1)
-console.log( JSON.stringify(  text));
+console.log( JSON.stringify(text));
 localStorage.setItem("text",JSON.stringify(text))
 // filter 
 //text.filter
@@ -55,14 +74,12 @@ localStorage.setItem("text",JSON.stringify(text))
  // object keys och values till en array 
 
 // removeItem from localstorage
- 
-
-// Kl. 11.00 
+   // 
 
 
 }
 changeList(2);
-
+*/
 
 document
 .querySelector(".addToList")
