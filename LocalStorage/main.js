@@ -2,12 +2,9 @@ const textList = [];
 const object = {}
 // Vi kommer att läsa data från användare (input + event)
 function addToLocalStorage(e){
-
     e.preventDefault();
-
     const element = e.target;
-
-   console.log( element)
+    console.log( element)
 
 // changeList(element_Data)
 const text = document.querySelector("#text").value;
@@ -85,3 +82,14 @@ document
 .querySelector(".addToList")
 .addEventListener("click", addToLocalStorage)
 
+// UPPGIFT : SKAPA EN ENKEL TODO LIST MED HJÄLP AV LOCALSTORAGE
+
+// create, read, update, delete any data/list/object 
+
+// localStorage-> create,read, update, delete 
+
+// data types, datatypes convert:- string + object , heltal /string, 
+
+
+
+// API extra : promises, callback, eventloop, async await
