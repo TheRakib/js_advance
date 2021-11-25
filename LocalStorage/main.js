@@ -43,6 +43,7 @@ JSON.stringify(obj)+"text"
 '{"name":"rakib"}text'
 */
 
+/*
 function changeList(i){
     const res = localStorage.getItem("text");
     // If res is not undefined/null :- 
@@ -79,6 +80,7 @@ localStorage.setItem("text",JSON.stringify(text))
 
 }
 //changeList(2);
+*/
 
 
 document
@@ -99,7 +101,6 @@ document
 
 
 
-
 // Sätter values i localstorage:-
 // localStorage
 //. setItem ("namnettilldata/keys", "values/den som kommer från js koden/användare ")
@@ -113,3 +114,9 @@ document
 // object/Lista : JSON.parse(localStorage.getItem("key"))
 
 
+
+// Delete data från localStorage;
+// localStorage.remove("keys");
+// localStorage.clear();// tar bort allt 
+
+//kl. 10.00 
