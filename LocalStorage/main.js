@@ -4,7 +4,8 @@ const object = {}
 function addToLocalStorage(e){
     e.preventDefault();
     const element = e.target;
-    console.log( element)
+    console.log( element.textContent)
+   // element.textContent ="Something else";
 
 // changeList(element_Data)
 const text = document.querySelector("#text").value;
@@ -17,7 +18,9 @@ textList.push(text)
 console.log(object);
 object["keynamn2"]="value 2"
 console.log(object);*/
-object[text] = number
+object[text] = Number(number)
+
+// {"test 2": "Siffror"}
 //console.log(object);
 // Stringify -> JSON 
 // setItems till localstorage 
@@ -30,7 +33,7 @@ localStorage.setItem("obj", JSON.stringify(object))
 
 
 // läser data från localstorage
-/* 
+/*
 var obj= {name:"rakib"}
 
 obj+"text"
@@ -38,8 +41,8 @@ obj+"text"
 
 JSON.stringify(obj)+"text"
 '{"name":"rakib"}text'
+*/
 
-/*
 function changeList(i){
     const res = localStorage.getItem("text");
     // If res is not undefined/null :- 
@@ -75,8 +78,8 @@ localStorage.setItem("text",JSON.stringify(text))
 
 
 }
-changeList(2);
-*/
+//changeList(2);
+
 
 document
 .querySelector(".addToList")
@@ -90,6 +93,23 @@ document
 
 // data types, datatypes convert:- string + object , heltal /string, 
 
-
-
 // API extra : promises, callback, eventloop, async await
+
+
+
+
+
+
+// Sätter values i localstorage:-
+// localStorage
+//. setItem ("namnettilldata/keys", "values/den som kommer från js koden/användare ")
+
+// text/string :- matas in direkt utan att JSON.Stringify();
+// Lista,Object måste vi JSON.Stringify()
+// localStorage.setItem("lista", JSON.Stringify(lista));
+
+//Läser data från LocalStorage:- 
+// localStorage.getItem("key");
+// object/Lista : JSON.parse(localStorage.getItem("key"))
+
+
