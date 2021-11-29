@@ -1,0 +1,69 @@
+
+* Gruppinlämning intro. 
+20:e december. Kunskapkontroll 
+
+
+
+* Git upprepning:- 
+
+  - LADDA NER GIT FRÅN ONLINEE
+  - GIT : git config --global user.name 
+          git config --global user.email
+
+
+
+
+Git -> remote server/datorn 
+ ->  git remote add origin https:adressen-till-repo-där-ni-vill-lagra-er-repo 
+
+
+
+
+git init --> gruppinlämning
+
+första steg:- .gitignore 
+
+Stage-> vad ni vill spara i git :- git add . /filnamn /mappnamn
+
+    . (root directory/mappen)
+
+sparar -> git commit -m "skriver nån vetting meddelande"
+
+(
+ git init 
+ git add . 
+ git commit -m "msg"
+ )
+// remove git from projektet: rm -fr .git
+
+
+// kl. 10.00 
+
+ Remote:- 
+   - Skapa konto i github,
+   - Skapa repo i github
+
+   - git remote add origin repo-adressen
+   - git push origin master/main
+
+
+( 
+1. git add . 
+2. git commit -m "msg"
+3. git push origin main
+)
+
+Ta bort remote repo: 
+ - git remote remove origin
+ - git remote -v 
+
+
+
+
+* Föreläsning fil 3, passing by value och reference:-
+
+
+
+
+
+* Handledning Inlämningsuppgift 2
