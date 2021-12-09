@@ -1,8 +1,9 @@
-const src = localStorage.getItem("src");
-const productName= localStorage.getItem("productName");
 
+const productString= localStorage.getItem("productList");
 
-
-document.querySelector("div").innerHTML = "<span>" + productName +"</span>" 
-
-+ "<img src=" +src + "  alt='image should be shown here' class='product-img'>";
+const productList = JSON.parse(productString)
+console.log(productList)
+productList.map( (product)=> {
+    document.querySelector("div").innerHTML += "<div>" + product.productName +"</div>" 
+    + "<img src=" + product.img+ "  alt='image should be shown here' class='product-img'>";
+})
