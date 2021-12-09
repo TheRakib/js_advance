@@ -13,7 +13,7 @@ localStorage.setItem("src", src)
 
 localStorage.setItem("productName", productName)
 
-
+// array av object 
 
 }
 
