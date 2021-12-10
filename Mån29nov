@@ -57,13 +57,19 @@ Ta bort remote repo:
  - git remote remove origin
  - git remote -v 
 
+ - git remote add origin adressen
+
 
 
 
 * Föreläsning fil 3, passing by value och reference:-
+/************######***********/
+// passing data by value and reference
+// Math.min och Math.max
+// array destructuring 
 
-
-
-
+/************#####*************/
 
 * Handledning Inlämningsuppgift 2
+
+12-13 lunch 
