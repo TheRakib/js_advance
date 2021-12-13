@@ -1,6 +1,9 @@
-const productList = [];
+
+// empty array eller information från localstorage 
+const productList = JSON.parse( localStorage.getItem("productList")) || [];
 
 // gammalLista  + nytt lista
+
 
 function addProduct(e) {
     e.preventDefault();
@@ -13,13 +16,8 @@ let productObj= {
 }
  productList.push(productObj)
  localStorage.setItem("productList", JSON.stringify(productList))
-
-
-
  //const oldProduct= localStorage.getItem("productList");
-
  //productList.concat(oldProduct);
-
 // array av object 
 }
 
